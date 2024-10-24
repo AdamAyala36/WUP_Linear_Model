@@ -32,6 +32,14 @@ The scatter plot made shows a positive correlation. Looks like those who do more
 ```{r}
 cor(SIMS~ARM,data=data)
 ```
-These results being positive prove there is a positive correlation and with the number being closer to 1 means that there is something going on between the simulation and arm strength.
+These results being positive prove there is a positive correlation and with the number being closer to 1 means that there is something may be going on between the simulation and arm strength.
 
 
+### Inferential Results
+
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+
+The graph has a R squared of 0.4706 being smaller than we like since the higher it is  better. But this does show a positive correlation with our positive R-squared value. 
