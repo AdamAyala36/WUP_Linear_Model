@@ -94,3 +94,16 @@ summary.lm(model.2)
 ```
 
 The residual standard error is 1.295 and R-squared is 0.4094. RST is still pretty small and the R-squared is still small and not much difference was made from the previous graph of SIMS vs ARM.
+
+### Scartter plot with linear fit
+
+```{r}
+basicNN <- ggplot(data,aes(y=SIMS,x=GRIP))
+
+```
+
+```{r}
+basicNN + geom_point() + ggtitle("SIMS vs GRIP") + theme(plot.title = element_text(hjust = 0.5, size = 20)) + geom_smooth(method=lm)
+```
+
+The line does go through the middle and does appear to be close to the corner of the screen. But there quite a bit of big outliers in this graph. 
