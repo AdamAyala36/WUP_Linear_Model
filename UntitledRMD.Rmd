@@ -85,3 +85,12 @@ cor(SIMS~GRIP,data=data)
 ```
 
 A good value of 0.6398458 is shown proving a positive correlation and the smaller it is the better. Which can be seen with the plots on th visual graph being pretty close.
+
+### Inferential results
+
+```{r}
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.2)
+```
+
+The residual standard error is 1.295 and R-squared is 0.4094. RST is still pretty small and the R-squared is still small and not much difference was made from the previous graph of SIMS vs ARM.
