@@ -51,6 +51,13 @@ basicNN + geom_point() + ggtitle("SIMS vs ARM") + theme(plot.title = element_tex
 
 The line does go through the middle going well with our predictions but the points are still scattered meaning it does show a positive correlation but there can be things that are better as seen with our low R-squared value and Residual standard error value of 1.226.
 
+
+### Create target
+
+```{r}
+target<-data.frame(ARM=90, GRIP=90)
+```
+
 ### Model 2 SIMS vs GRIP
 ### Scatterplot
 ```{r}
@@ -63,3 +70,4 @@ basicNN + geom_point() + ggtitle("SIMS vs GRIP") + theme(plot.title = element_te
 ```
 
 This graph shows a positive linear relationship. With most dots being closer together especially in the middle.
+
