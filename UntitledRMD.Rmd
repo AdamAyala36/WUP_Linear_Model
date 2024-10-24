@@ -43,3 +43,10 @@ summary.lm(model.1)
 ```
 
 The graph has a R squared of 0.4706 being smaller than we like since the higher it is  better. But this does show a positive correlation with our positive R-squared value. 
+
+### Linear Fit
+```{r}
+basicNN + geom_point() + ggtitle("SIMS vs ARM") + theme(plot.title = element_text(hjust = 0.5, size = 20)) + geom_smooth(method=lm)
+```
+
+The line does go through the middle going well with our predictions but the points are still scattered meaning it does show a positive correlation but there can be things that are better as seen with our low R-squared value and Residual standard error value of 1.226.
