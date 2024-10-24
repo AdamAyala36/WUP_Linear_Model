@@ -1,0 +1,6 @@
+---
+title: "WriteUp Linear Model"
+author: "Adam Ayala"
+date: "10/20/2024"
+output: html_document
+---
