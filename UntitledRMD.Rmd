@@ -174,3 +174,8 @@ anova(model.1,model.2)
 ```
 
 No p-value is given, but what we do see is that there is more errors in model 2 since it has a number of  243.07 compared to model 1's 217.88. Meaning in ranking the different models on best use for testing is model 3 as the best, then model 1 and finally model 2 as the worst.
+
+## Discussion and Conclusion
+
+The p-values for model 1 vs model 3 is 0.000004994 and the p-value of model 2 vs model 3 is 0.000000001495. Both of these values are low showing significant difference but the p-value is much smaller with model 2 vs model 3 meaning there is a greater difference with that comparison. Because of this we know that Model 3 is the best model since its residual standard error squared numbers is 188.43 being much lower than model 1's 217.88 and model 2's 243.07. Which is proven by the p-value being low.
+
