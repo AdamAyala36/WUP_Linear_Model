@@ -136,3 +136,13 @@ summary.lm(model.3)
 Our equation is SIMS = 0.037311ARM +  0.024470GRIP + -5.433871. With this we now have our equation of the line for a 3 dimensional graph.
 
 
+
+### Predict Target Point for Model 3
+
+```{r}
+predict(model.3,target,interval=c("prediction"))
+
+```
+
+Our prediction point is at 0.1263886 and can be as low as -2.1626 and as high as 2.415377. To properly see a comparison of this point to the other models we must use anova. 
+
