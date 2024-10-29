@@ -84,7 +84,7 @@ This graph shows a positive linear relationship. With most dots being closer tog
 cor(SIMS~GRIP,data=data)
 ```
 
-A good value of 0.6398458 is shown proving a positive correlation and the smaller it is the better. Which can be seen with the plots on th visual graph being pretty close.
+A good value of 0.6398458 is shown proving a positive correlation but slightly smaller than model 1's value. But still pretty similar which can be seen with the plots on the visual graph being pretty close to each other but still different.
 
 ### Inferential results
 
@@ -116,3 +116,14 @@ basicNN + geom_point() + ggtitle("SIMS vs GRIP") + theme(plot.title = element_te
 ```
 
 The line does go through the middle and does appear to be close to the corner of the screen. But there quite a bit of big outliers in this graph. 
+
+## Model 3 SIMS~ARM+GRIP
+### Numerical Results
+
+```{r}
+cor(SIMS~ARM+GRIP,data=data)
+```
+
+This value would also show a positive correlation even when comparing the two types of data of ARM and GRIP. Because this value is closer to 1 than Model 1's and Model 2's number means this one is definitely better. Model 1's number is 0.6860073 and Model 2's nummber is 0.6398458 being smaller by almost .1 to Model 3. 
+
+
