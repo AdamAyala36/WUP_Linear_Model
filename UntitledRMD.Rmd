@@ -146,3 +146,12 @@ predict(model.3,target,interval=c("prediction"))
 
 Our prediction point is at 0.1263886 and can be as low as -2.1626 and as high as 2.415377. To properly see a comparison of this point to the other models we must use anova. 
 
+### Comparing Models Using anova.
+#### Model 1 vs Model 3
+
+```{r}
+anova(model.1,model.3)
+```
+
+Our p-value is 0.000004994, the difference between the two models is 29.45 seen from the Residual standard of errors with model 3 having the lower value and since the p-value is small proves that there is a significant difference. 
+
