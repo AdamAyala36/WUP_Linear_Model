@@ -126,4 +126,13 @@ cor(SIMS~ARM+GRIP,data=data)
 
 This value would also show a positive correlation even when comparing the two types of data of ARM and GRIP. Because this value is closer to 1 than Model 1's and Model 2's number means this one is definitely better. Model 1's number is 0.6860073 and Model 2's nummber is 0.6398458 being smaller by almost .1 to Model 3. 
 
+### Inferential Results Model 3
+
+```{r}
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
+summary.lm(model.3)
+```
+
+Our equation is SIMS = 0.037311ARM +  0.024470GRIP + -5.433871. With this we now have our equation of the line for a 3 dimensional graph.
+
 
